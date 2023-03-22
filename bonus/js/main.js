@@ -53,13 +53,13 @@ for (let i = 0; i < team.length; i++) {
 
   // MILESTONE 2:
 // Seleziona l' elemento col
-const colEl = document.querySelector('.col')
+const colEl = document.querySelector('.col-3')
 
 // Crea l' elemento card
 const newCard = document.createElement('div.card')
 
 // Aggiunge contenuto
-newCard.innerHTML += `<h1>Nome: ${member.nome} </h1> <h2>Ruolo: ${member.ruolo}</h2>` 
+newCard.innerHTML += `<h2>Nome: ${member.nome} </h2> <h3>Ruolo: ${member.ruolo}</h3>` 
 console.log(newCard);
 // Crea il tag img
 const newDiv = document.createElement('div')
