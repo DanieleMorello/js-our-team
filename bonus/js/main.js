@@ -49,9 +49,6 @@ const team = [
 // Seleziona il contenitore di tutte le colonne
 const containerEl = document.querySelector('.container')
 
-// Contatore per tenere traccia del numero di carte già inserite nella riga corrente
-let cardsInRow = 0
-
 // Crea una nuova riga per la prima carta
 let newRow = document.createElement('div')
 newRow.className = 'row'
@@ -59,14 +56,6 @@ containerEl.appendChild(newRow)
 
 for (let i = 0; i < team.length; i++) {
   const member = team[i]
-  
-  // Se abbiamo già inserito tre carte nella riga corrente, creiamo una nuova riga
-  if (cardsInRow >= 3) {
-    newRow = document.createElement('div')
-    newRow.className = 'row'
-    containerEl.appendChild(newRow)
-    cardsInRow = 0
-  }
   
   // Crea una nuova colonna per la carta corrente
   const newCol = document.createElement('div')
@@ -85,6 +74,4 @@ for (let i = 0; i < team.length; i++) {
   
   newCol.appendChild(newCard)
   newRow.appendChild(newCol)
-  
-  cardsInRow++
 }
