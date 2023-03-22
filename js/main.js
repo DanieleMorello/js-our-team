@@ -12,7 +12,7 @@ MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe
  */
 
-//MILESTONE 0
+// MILESTONE 0
 const team = [
   {
     nome: 'Fabio',
@@ -31,8 +31,21 @@ const team = [
   }
 ]
 
-//MILESTONE 1
+// MILESTONE 1
 for (let i = 0; i < team.length; i++) {
-  const member = team[i];
-  console.log(member['nome'], member['ruolo'], member['foto']);
+  const member = team[i]
+  console.log(member['nome'], member['ruolo'], member['foto'])
+
+  // MILESTONE 2:
+// Seleziona l' elemento col
+const colEl = document.querySelector('.col')
+
+// Crea l' elemento card
+const newCard = document.createElement('div.card')
+
+// Aggiunge contenuto
+newCard.innerHTML += `Nome: ${member.nome} <br> Ruolo: ${member.ruolo} <br> Foto: ${member.foto}<br><br>` 
+
+// Stampo
+colEl.appendChild(newCard);
 }
