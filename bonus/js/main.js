@@ -17,39 +17,39 @@ const team = [
   {
     nome: 'Wayne Barnett',
     ruolo: 'Founder & CEO',
-    foto: 'wayne-barnett-founder-ceo.jpg'
+    foto: '../assets/img/wayne-barnett-founder-ceo.jpg'
   },
   {
     nome: 'Angela Caroll',
     ruolo: 'Chief Editor',
-    foto: 'angela-caroll-chief-editor.jpg'
+    foto: '../assets/img/angela-caroll-chief-editor.jpg'
   },
   {
     nome: 'Walter Gordon',
     ruolo: 'Office Manager',
-    foto: 'walter-gordon-office-manager.jpg'
+    foto: '../assets/img/walter-gordon-office-manager.jpg'
   },
   {
     nome: 'Angela Lopez',
     ruolo: 'Social Media Manager',
-    foto: 'angela-lopez-social-media-manager.jpg'
+    foto: '../assets/img/angela-lopez-social-media-manager.jpg'
   },
   {
     nome: 'Scott Estrada',
     ruolo: 'Developer',
-    foto: 'scott-estrada-developer.jpg'
+    foto: '../assets/img/scott-estrada-developer.jpg'
   },
   {
     nome: 'Barbara Ramos',
     ruolo: 'Graphic Designer',
-    foto: 'barbara-ramos-graphic-designer.jpg'
+    foto: '../assets/img/barbara-ramos-graphic-designer.jpg'
   }
 ]
 
 // MILESTONE 1
 for (let i = 0; i < team.length; i++) {
   const member = team[i]
-  console.log(member['nome'], member['ruolo'], member['foto'])
+  // console.log(member['nome'], member['ruolo'], member['foto'])
 
   // MILESTONE 2:
 // Seleziona l' elemento col
@@ -59,8 +59,17 @@ const colEl = document.querySelector('.col')
 const newCard = document.createElement('div.card')
 
 // Aggiunge contenuto
-newCard.innerHTML += `Nome: ${member.nome} <br> Ruolo: ${member.ruolo} <br> Foto: ${member.foto}<br><br>` 
+newCard.innerHTML += `<h1>Nome: ${member.nome} </h1> <h2>Ruolo: ${member.ruolo}</h2>` 
+console.log(newCard);
+// Crea il tag img
+const newDiv = document.createElement('div')
 
-// Stampo
-colEl.appendChild(newCard);
+// Aggiunge contenuto
+newDiv.innerHTML += `<img src="${member.foto}" alt="">`
+console.log(newDiv)
+// Stampa
+newCard.appendChild(newDiv)
+
+// Stampa
+colEl.appendChild(newCard)
 }
