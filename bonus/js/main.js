@@ -15,19 +15,34 @@ Stampare le stesse informazioni su DOM sottoforma di stringhe
 // MILESTONE 0
 const team = [
   {
-    nome: 'Fabio',
-    ruolo: 'Docente',
-    foto: 'https://www.linkedin.com/in/fabio-pacifici-com/overlay/photo/'
+    nome: 'Wayne Barnett',
+    ruolo: 'Founder & CEO',
+    foto: 'wayne-barnett-founder-ceo.jpg'
   },
   {
-    nome: 'Donato',
-    ruolo: 'Tutor',
-    foto: 'https://www.linkedin.com/in/donato-riccio-wda/overlay/photo/'
+    nome: 'Angela Caroll',
+    ruolo: 'Chief Editor',
+    foto: 'angela-caroll-chief-editor.jpg'
   },
   {
-    nome: 'Giuliano',
-    ruolo: 'Tutor',
-    foto: 'https://www.linkedin.com/in/giuliano-gostinfini/overlay/photo/'
+    nome: 'Walter Gordon',
+    ruolo: 'Office Manager',
+    foto: 'walter-gordon-office-manager.jpg'
+  },
+  {
+    nome: 'Angela Lopez',
+    ruolo: 'Social Media Manager',
+    foto: 'angela-lopez-social-media-manager.jpg'
+  },
+  {
+    nome: 'Scott Estrada',
+    ruolo: 'Developer',
+    foto: 'scott-estrada-developer.jpg'
+  },
+  {
+    nome: 'Barbara Ramos',
+    ruolo: 'Graphic Designer',
+    foto: 'barbara-ramos-graphic-designer.jpg'
   }
 ]
 
