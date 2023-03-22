@@ -12,3 +12,27 @@ MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe
  */
 
+//MILESTONE 0
+const team = [
+  {
+    nome: 'Fabio',
+    ruolo: 'Docente',
+    foto: 'https://www.linkedin.com/in/fabio-pacifici-com/overlay/photo/'
+  },
+  {
+    nome: 'Donato',
+    ruolo: 'Tutor',
+    foto: 'https://www.linkedin.com/in/donato-riccio-wda/overlay/photo/'
+  },
+  {
+    nome: 'Giuliano',
+    ruolo: 'Tutor',
+    foto: 'https://www.linkedin.com/in/giuliano-gostinfini/overlay/photo/'
+  }
+]
+
+//MILESTONE 1
+for (let i = 0; i < team.length; i++) {
+  const member = team[i];
+  console.log(member['nome'], member['ruolo'], member['foto']);
+}
